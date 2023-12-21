@@ -15,12 +15,12 @@ namespace list {
         }
     }
 
-    void Graph::addEdge(int from, int to) {
+    void Graph::addEdge(string from, string to) {
         Edge* edge = new Edge(from, to, 1);
         edges[from].insert(edge);
     }
 
-    void Graph::addEdge(int from, int to, int weight) {
+    void Graph::addEdge(string from, string to, int weight) {
         Edge* edge = new Edge(from, to, weight);
         edges[from].insert(edge);
     }

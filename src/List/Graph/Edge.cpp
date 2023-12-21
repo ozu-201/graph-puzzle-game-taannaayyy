@@ -5,7 +5,7 @@
 
 #include "Edge.h"
 
-Edge::Edge(int from, int to, int weight) {
+Edge::Edge(std::string from, std::string to, int weight) {
     this->from = from;
     this->to = to;
     this->weight = weight;
@@ -20,11 +20,11 @@ Edge *Edge::getNext() const{
     return next;
 }
 
-int Edge::getFrom() const{
+std::string Edge::getFrom() const{
     return from;
 }
 
-int Edge::getTo() const{
+std::string Edge::getTo() const{
     return to;
 }
 

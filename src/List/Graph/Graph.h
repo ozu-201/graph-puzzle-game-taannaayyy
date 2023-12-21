@@ -8,7 +8,7 @@
 
 #include "EdgeList.h"
 #include "../../General/AbstractGraph.h"
-
+#include "string"
 namespace list {
 
     class Graph : public AbstractGraph {
@@ -19,9 +19,9 @@ namespace list {
 
         ~Graph();
 
-        void addEdge(int from, int to);
+        void addEdge(std::string from, std::string to);
 
-        void addEdge(int from, int to, int weight);
+        void addEdge(std::string from, std::string to, int weight);
 
         void connectedComponentsDisjointSet();
 

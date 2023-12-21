@@ -6,19 +6,21 @@
 #define GRAPH_PUZZLE_GAME_TAANNAAYYY_EDGE_H
 
 
+#include <string>
+
 class Edge {
 private:
-    int from;
-    int to;
+    std::string from;
+    std::string to;
     int weight;
     Edge* next;
 public:
     Edge();
-    Edge(int from, int to, int weight);
+    Edge(std::string from, std::string to, int weight);
     void setNext(Edge* _next);
     Edge* getNext() const;
-    int getFrom() const;
-    int getTo() const;
+    std::string getFrom() const;
+    std::string getTo() const;
     int getWeight() const;
 };
 
