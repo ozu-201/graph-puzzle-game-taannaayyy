@@ -31,7 +31,7 @@ namespace list {
 
     void Graph::connectedComponentsDisjointSet() {
         Edge* edge;
-        int toNode;
+        basic_string<char> toNode;
         DisjointSet sets = DisjointSet(vertexCount);
         for (int fromNode = 0; fromNode < vertexCount; fromNode++){
             edge = edges[fromNode].getHead();
